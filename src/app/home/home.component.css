@@ -1,0 +1,49 @@
+mat-toolbar.zentrierung-home {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 75px;
+}
+mat-toolbar.zentrierung-icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 300px;
+}
+mat-toolbar.zentrierung-title{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 300%;
+}
+mat-toolbar.zentrierung-user{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 75%;
+}
+.icon {
+    display: table-cell;
+    height: 250px;
+    text-align: center;
+    width: 250px;
+    vertical-align: middle;
+}
+.buttonfab {
+  width: 75px;
+  height: 75px;
+}
+.iconfab {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+}
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+mat-toolbar.zentrierung-home {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 75px;
+}
+mat-toolbar.zentrierung-icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 300px;
+}
+mat-toolbar.zentrierung-title{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 300%;
+}
+mat-toolbar.zentrierung-user{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 75%;
+}
+.icon {
+  display: table-cell;
+  height: 250px;
+  text-align: center;
+  width: 250px;
+  vertical-align: middle;
+}
+.buttonabbruchrechts{
+  align-self: center;
+}
+.listeeintrag {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 300px;
+  align-items: center;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+  width: 80%;
+
+}
+
+.mat-row.hovered {
+  background: rgb(212, 30, 30);
+}
+
+.mat-row.highlighted {
+  background: rgb(7, 97, 67);
+}
+
+mat-header-row.make-background {
+  background-color: rgb(0, 0, 0);
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}

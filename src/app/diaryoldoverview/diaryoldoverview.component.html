@@ -1,0 +1,48 @@
+<!-- Logo + Appname-->
+<mat-toolbar color="primary" class="zentrierung-icon">
+  <span><img class="icon" src="assets/img/awa-logo512x512.png" alt="AWA-LOGO"></span>
+</mat-toolbar>
+<mat-toolbar color="primary" class="zentrierung-home">
+  <span>AWA | Ache Watcher APP</span>
+</mat-toolbar>
+<mat-toolbar color="primary" class="zentrierung-title">
+  <span>Liste aller Einträge von</span>
+</mat-toolbar>
+<mat-toolbar color="primary" class="zentrierung-user">
+  <span>[User]</span>
+</mat-toolbar>
+
+<!--Liste-->
+
+<div class="listeeintrag">
+  <mat-table #table [dataSource]="dataSource">
+
+    <!-- Eintrag Column -->
+    <ng-container matColumnDef="eintrag">
+      <mat-header-cell class="center" *matHeaderCellDef> Eintrag </mat-header-cell>
+      <mat-cell class="center" *matCellDef="let element"> {{element.eintrag}} </mat-cell>
+    </ng-container>
+
+    <!-- Datum Column -->
+    <ng-container matColumnDef="datum">
+      <mat-header-cell class="center" *matHeaderCellDef> Datum </mat-header-cell>
+      <mat-cell class="center" *matCellDef="let element"> {{element.datum}} </mat-cell>
+    </ng-container>
+
+    <!-- Uhrzeit Column -->
+    <ng-container matColumnDef="uhrzeit">
+      <mat-header-cell class="center" *matHeaderCellDef> Uhrzeit </mat-header-cell>
+      <mat-cell class="center" *matCellDef="let element"> {{element.uhrzeit}} </mat-cell>
+    </ng-container>
+    <!-- hier werden die rows festgelegt so das man auf sie klicken kann oder über sie drüber fährt die farbe ändert-->
+    <mat-header-row *matHeaderRowDef="displayedColumns" class="make-background" ></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{hovered: row.hovered,
+      highlighted: row.highlighted}" (click)="row.highlighted = !row.highlighted" (mouseover)="row.hovered = true" (mouseout)="row.hovered = false"></mat-row>
+  </mat-table>
+</div>
+
+
+<!--Buttons Auswahl zurück-->
+<a mat-button color="primary" routerLink="../diarychoice">< Zurück</a>
+<a mat-button color="primary" class="buttonabbruchrechts" routerLink="../home">Abbrechen</a>
+
