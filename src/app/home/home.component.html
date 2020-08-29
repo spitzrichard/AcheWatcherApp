@@ -1,41 +1,38 @@
 
 <!-- Logo + Appname-->
-<mat-toolbar color="primary" class="zentrierung-icon">
+<mat-toolbar class="zentrierung-icon">
   <span><img class="icon" src="assets/img/awa-logo512x512.png" alt="AWA-LOGO"></span>
 </mat-toolbar>
-<mat-toolbar color="primary" class="zentrierung-home">
+<mat-toolbar class="zentrierung-home">
   <span>AWA | Ache Watcher APP</span>
 </mat-toolbar>
-<mat-toolbar color="primary" class="zentrierung-title">
+<mat-toolbar class="zentrierung-title">
   <span>Wilkommen</span>
 </mat-toolbar>
-<mat-toolbar color="primary" class="zentrierung-user">
+<mat-toolbar class="zentrierung-user">
   <span>[User]</span>
 </mat-toolbar>
 
 <!-- Buttons -->
-<section>
-<a mat-fab [routerLink]="['/diarychoice']" class="buttonfab" routerLinkActive="active">
-  <mat-icon class="iconfab" >favorite</mat-icon>
-</a>
-</section>
+<mat-toolbar class="zentrierung-logo">
+  <a mat-fab color="buttoncustomcolor" [routerLink]="['/diarychoice']" class="buttonfab" routerLinkActive="active">
+    <mat-icon class="iconfab" svgIcon="ache-watcher"></mat-icon>Diary
+  </a>
+</mat-toolbar>
 
-<section>
-  <button mat-mini-fab>
-    <mat-icon>list</mat-icon>
+<mat-toolbar class="zentrierung-buttonsoben">
+
+  <button mat-fab (click)="openDialog()" color="buttoncustomcolor" class="buttonfabkleinmittelinks">
+    <mat-icon class="iconfabkleinmittelinks">list</mat-icon>View
   </button>
-  <button mat-mini-fab>
-    <mat-icon>settings</mat-icon>
+  <button mat-fab (click)="openDialog()" color="buttoncustomcolor" class="buttonfabklein">
+    <mat-icon class="iconfabklein">settings</mat-icon>Setting
   </button>
-</section>
+</mat-toolbar>
 
-<section>
-  <button mat-mini-fab>
-    <mat-icon>logout</mat-icon>
+<mat-toolbar class="zentrierung-buttonsunten">
+  <button mat-fab color="buttoncustomcolor" class="buttonfabklein">
+    <mat-icon class="iconfabklein">logout</mat-icon>Logout
   </button>
-</section>
-
-
-
-
+</mat-toolbar>
 

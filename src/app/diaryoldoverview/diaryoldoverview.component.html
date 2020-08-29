@@ -1,14 +1,14 @@
 <!-- Logo + Appname-->
-<mat-toolbar color="primary" class="zentrierung-icon">
+<mat-toolbar class="zentrierung-icon">
   <span><img class="icon" src="assets/img/awa-logo512x512.png" alt="AWA-LOGO"></span>
 </mat-toolbar>
-<mat-toolbar color="primary" class="zentrierung-home">
+<mat-toolbar class="zentrierung-home">
   <span>AWA | Ache Watcher APP</span>
 </mat-toolbar>
-<mat-toolbar color="primary" class="zentrierung-title">
+<mat-toolbar class="zentrierung-title">
   <span>Liste aller Einträge von</span>
 </mat-toolbar>
-<mat-toolbar color="primary" class="zentrierung-user">
+<mat-toolbar class="zentrierung-user">
   <span>[User]</span>
 </mat-toolbar>
 
@@ -34,15 +34,34 @@
       <mat-header-cell class="center" *matHeaderCellDef> Uhrzeit </mat-header-cell>
       <mat-cell class="center" *matCellDef="let element"> {{element.uhrzeit}} </mat-cell>
     </ng-container>
+
+     <!-- Auswahl/Checkbox Column -->
+     <ng-container matColumnDef="auswahl">
+      <mat-header-cell class="center" *matHeaderCellDef>
+        Auswahl
+      </mat-header-cell>
+      <mat-cell  *matCellDef="let row">
+
+        <mat-checkbox class="right" (click)="$event.stopPropagation()"
+                      (change)="$event ? selection.toggle(row) : null"
+                      [checked]="selection.isSelected(row)">
+        </mat-checkbox>
+      </mat-cell>
+    </ng-container>
+
     <!-- hier werden die rows festgelegt so das man auf sie klicken kann oder über sie drüber fährt die farbe ändert-->
     <mat-header-row *matHeaderRowDef="displayedColumns" class="make-background" ></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{hovered: row.hovered,
-      highlighted: row.highlighted}" (click)="row.highlighted = !row.highlighted" (mouseover)="row.hovered = true" (mouseout)="row.hovered = false"></mat-row>
+    <mat-row class="hoverrow" *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)" [ngClass]="{hovered: row.hovered,
+      highlighted: selection.isSelected(row)}" (click)="row.highlighted = !row.highlighted" (mouseover)="row.hovered = true" (mouseout)="row.hovered = false"></mat-row>
   </mat-table>
 </div>
 
+<!-- Auswahl Button für die Tabelle--><!--Buttons Auswahl zurück Abbrechen mit grid damit aufgeteilt ist-->
 
-<!--Buttons Auswahl zurück-->
-<a mat-button color="primary" routerLink="../diarychoice">< Zurück</a>
-<a mat-button color="primary" class="buttonabbruchrechts" routerLink="../home">Abbrechen</a>
-
+<mat-toolbar class="zentrierung-abstand">
+  <button mat-flat-button class="mat-buttoncustomcolor">Auswählen</button>
+</mat-toolbar>
+<mat-toolbar class="zentrierung-listeende">
+  <a mat-button class="hover-color-back" routerLink="../diarychoice">< Zurück</a>
+  <a mat-button class="hover-color-abbrechen" routerLink="../home">Abbrechen</a>
+</mat-toolbar>

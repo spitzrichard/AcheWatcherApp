@@ -9,7 +9,10 @@ export class DiarychoiceComponent implements OnInit {
 
   constructor() { }
 
+
+
   ngOnInit(): void {
   }
+
 
 }

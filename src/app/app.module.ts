@@ -15,13 +15,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DiarychoiceComponent,
-    DiaryoldoverviewComponent
+    DiaryoldoverviewComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -33,10 +41,15 @@ import {MatTableModule} from '@angular/material/table';
     HttpClientModule,
     RouterModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatGridListModule,
+    MatCheckboxModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    MatDialogModule
 
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

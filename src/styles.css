@@ -1,4 +1,121 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #fec7d7;
+  color: #0e172c;
+}
+
+/*skip link wird benötigt für eine vollständige pwa, ist das erste element das einen dann zur mainseite führen kann*/
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #0e172c;
+  ;
+  color: #fffffe;
+  ;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+/* Logo und Überschriften von der Homeseite
+*/
+mat-toolbar.zentrierung-home {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 5%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+mat-toolbar.zentrierung-icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 30%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+mat-toolbar.zentrierung-title{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 5%;
+  font-size: 200%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+mat-toolbar.zentrierung-user{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 5%;
+  font-size: 75%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+
+mat-toolbar.zentrierung-logo{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 25%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+
+mat-toolbar.zentrierung-buttonsoben{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 15%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+
+mat-toolbar.zentrierung-buttonsunten{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 10%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+
+mat-toolbar.zentrierung-auswahl{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 40%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+
+mat-toolbar.zentrierung-abstand{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 9%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+
+mat-toolbar.zentrierung-listeende{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 5%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+
+.mat-buttoncustomcolor {
+  background-color: #0e172c;
+  color: #fffffe;
+}
+
+

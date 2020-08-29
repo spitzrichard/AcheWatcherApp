@@ -1,25 +1,28 @@
 <!-- Logo + Appname-->
-<mat-toolbar color="primary" class="zentrierung-icon">
+<mat-toolbar class="zentrierung-icon">
   <span><img class="icon" src="assets/img/awa-logo512x512.png" alt="AWA-LOGO"></span>
 </mat-toolbar>
-<mat-toolbar color="primary" class="zentrierung-home">
+<mat-toolbar class="zentrierung-home">
   <span>AWA | Ache Watcher APP</span>
 </mat-toolbar>
-<mat-toolbar color="primary" class="zentrierung-title">
+<mat-toolbar class="zentrierung-title">
   <span>Auswahlseite von</span>
 </mat-toolbar>
-<mat-toolbar color="primary" class="zentrierung-user">
+<mat-toolbar class="zentrierung-user">
   <span>[User]</span>
+</mat-toolbar>
+<!--Buttons etc-->
+<mat-toolbar class="zentrierung-auswahl">
+  <a mat-fab color="buttoncustomcolor" routerLink="xy" class="buttonfabchoicenew" routerLinkActive="active">
+    <mat-icon class="iconfabchoice" >control_point</mat-icon>New
+  </a>
+  <a mat-fab color="buttoncustomcolor" routerLink="../diaryoldoverview" class="buttonfabchoiceold" routerLinkActive="active">
+    <mat-icon class="iconfabchoice" >build</mat-icon>Old
+  </a>
+</mat-toolbar>
+<mat-toolbar class="zentrierung-abstand">
+
 </mat-toolbar>
 
 
-<!--Buttons etc-->
-<section>
-  <a mat-fab routerLink="xy" class="buttonfab" routerLinkActive="active">
-    <mat-icon class="iconfab" >control_point</mat-icon>
-  </a>
-  <a mat-fab routerLink="../diaryoldoverview" class="buttonfab" routerLinkActive="active">
-    <mat-icon class="iconfab" >build</mat-icon>
-  </a>
-</section>
-<a mat-button color="primary" routerLink="../home">Abbrechen</a>
+<a mat-button class="hover-color-abbrechen" routerLink="../home">Abbrechen</a>

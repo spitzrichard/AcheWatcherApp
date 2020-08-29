@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { RouterLinkWithHref } from '@angular/router';
+import {SelectionModel} from '@angular/cdk/collections';
 
 @Component({
   selector: 'app-diaryoldoverview',
@@ -10,14 +10,30 @@ import { RouterLinkWithHref } from '@angular/router';
 
 export class DiaryoldoverviewComponent implements OnInit {
 
-  displayedColumns = ['eintrag', 'datum', 'uhrzeit'];
+  displayedColumns = ['eintrag', 'datum', 'uhrzeit', 'auswahl'];
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
-
+  selection = new SelectionModel<Element>(false, []);
   // tslint:disable-next-line: typedef
   highlight(element: Element) {
     element.highlighted = !element.highlighted;
   }
-
+/*
+  // tslint:disable-next-line: typedef
+  isAllSelected() {
+    const numSelected = this.selection.selected.length;
+    const numRows = this.dataSource.data.length;
+    return numSelected === numRows;
+  }
+*/
+  /** Selects all rows if they are not all selected; otherwise clear selection. */
+  // tslint:disable-next-line: typedef
+  /*
+  masterToggle() {
+    this.isAllSelected() ?
+        this.selection.clear() :
+        this.dataSource.data.forEach(row => this.selection.select(row));
+  }
+*/
   constructor() {
   }
 

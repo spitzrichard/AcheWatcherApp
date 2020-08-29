@@ -1,43 +1,42 @@
-mat-toolbar.zentrierung-home {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  height: 75px;
-}
-mat-toolbar.zentrierung-icon {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  height: 300px;
-}
-mat-toolbar.zentrierung-title{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  height: 50px;
-  font-size: 300%;
-}
-mat-toolbar.zentrierung-user{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  height: 50px;
-  font-size: 75%;
-}
+
+/*Logogröße und Positionierung*/
 .icon {
-  display: table-cell;
-  height: 250px;
-  text-align: center;
-  width: 250px;
-  vertical-align: middle;
+  display: flex;
+  height: 50%;
+  width: 50%;
+  justify-content: center;
+  margin-left: 25%;             /* muss so gemacht werden damit das Icon(Logo) mit % gemacht wird und dann mittig ist*/
 }
-.buttonfab {
-width: 75px;
-height: 75px;
+
+/* Größe Positionierung der Buttons*/
+.buttonfabchoicenew {
+width: 125px;
+height: 125px;
+margin-right: 5%;
+
+
 }
-.iconfab {
+.buttonfabchoiceold {
+  width: 125px;
+  height: 125px;
+  margin-left: 5%;
+
+  }
+.iconfabchoice {
 display: block;
-width: 50px;
-height: 50px;
-font-size: 50px;
+width: 100%;
+height: 100%;
+margin-top: 5%;
+font-size: 600%;
 }
+
+/*Abbrechen Button unten*/
+.hover-color-abbrechen:hover{
+  background-color: #0e172c;
+  color: #f9f8fc;
+}
+.hover-color-abbrechen {
+  margin-left: 72%;
+}
+
+

@@ -1,17 +1,23 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+<head>  <!--name und description sind notwendig für eine pwa, damit sie bei der suche besser gefunden werden kann-->
+  <meta charset="utf-8"
+    name="description" content="Dies ist eine Anwendung zur Dokumentation von Rückenschmerzen. Diese soll dabei helfen dem Patient und dem zuständingen Arzt eine bessere Diagnose/Therapie zu ermöglichen und um die Lebensqualität des Patienten zu verbessern">
   <title>AcheWatcherApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/assets/img/awa-logo32x32.png"> <!--logo geänder oben bei den tabs-->
+  <link rel="apple-touch-icon" href="assets/img/awa-logo192x192.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  <a class="skip-link" href="#home">Auf die Homeseite</a>
 </head>
 <body class="mat-typography">
   <app-root>
   </app-root>
 
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
