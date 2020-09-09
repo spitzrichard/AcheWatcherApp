@@ -1,0 +1,72 @@
+/*--------------------standard template css--------------------------*/
+/*Abbrechen Button unten*/
+.hover-color-abbrechen:hover{
+  background-color: #0e172c;
+  color: #f9f8fc;
+}
+.hover-color-abbrechen {
+  margin-left: 70%;
+  position: absolute;
+  right:    0;
+  bottom:   0;
+}
+
+/*Logogröße und Positionierung*/
+.icon {
+  display: flex;
+  height: 20%;
+  width: 20%;
+  padding: 10%;
+}
+
+/* muss so gemacht werden damit das Icon(Logo) mit % gemacht wird und dann mittig ist*/
+
+.logotitel {
+  display: flex;
+  font-size: 150%;
+  width: 30%;
+}
+
+/*höhe der lane */
+.logolane {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 10%;
+  background: #fec7d7;
+  color: #0e172c;
+}
+/*unten der button das er unten ist und mittig mit farbe etc.*/
+mat-toolbar.laneunten{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 9%;
+  background: #fec7d7;
+  color: #0e172c;
+  position: absolute;
+  right:    0;
+  bottom:   5%;
+}
+
+/*progressbar farbe + das es etwas unter dem logo ist*/
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: #0e172c;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+  background: #f9f8fc;
+}
+
+::ng-deep .mat-progress-bar {
+  margin-top: 1%;
+}
+/*title name zentrierung größe etc.*/
+.titlesize {
+  font-size: 150%;
+  text-align: center;
+  margin-top:3%;
+
+}
+/*----------------standard template css ende------------------------------*/
+
