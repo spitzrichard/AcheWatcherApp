@@ -71,3 +71,24 @@ mat-toolbar.laneunten{
 }
 /*----------------standard template css ende------------------------------*/
 
+
+/*checkboxes ausrichtung und abstand etc. farben
+*/
+
+.anpassungcb {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+
+  height: 5%;
+}
+
+.abstandcb {
+  margin-left: 10%;
+}
+
+
+
+
+

@@ -11,7 +11,22 @@
 <!-- title der seite-->
   <p class="titlesize">Gab es sonstige Auffälligkeiten?</p>
 
+<!-- infos und aufzählung-->
 
+<p>Ist Ihnen sonst etwas aufgefallen, das hier nicht abgefragt wurde.</p>
+<p>Auffälligkeiten können sein:</p>
+
+<ul class="tabellefont">
+  <li>Morgens schon einen Schmerz gespürt zu haben, der aber nicht richtig schmerzhaft zu dem Zeitpunkt war</li>
+
+</ul>
+
+<!--textfeld zum eintragen-->
+<mat-form-field class="formfieldmittig" floatLabel="auto" appearance="outline">
+  <mat-label>Auffälligkeiten</mat-label>
+  <input matInput required #message maxlength="128"/>
+
+</mat-form-field>
 
 
 <!--letzte Button und die Navigation-->

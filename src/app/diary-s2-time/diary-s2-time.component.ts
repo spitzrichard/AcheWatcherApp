@@ -1,4 +1,14 @@
+
+
 import { Component, OnInit } from '@angular/core';
+
+
+
+
+
+
+
+
 
 @Component({
   selector: 'app-diary-s2-time',
@@ -7,9 +17,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiaryS2TimeComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
+

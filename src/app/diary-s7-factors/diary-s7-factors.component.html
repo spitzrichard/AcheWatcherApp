@@ -11,6 +11,35 @@
 <!-- title der seite-->
   <p class="titlesize">Gibt es Faktoren die Ihren Schmerz  verstärken oder verschlechtern?</p>
 
+<!-- Infotext mit aufzählung-->
+
+<p class="fontsize">Faktoren die ihren Schmerz verstärken oder verschlechtern, könnten sein:</p>
+
+<ul class="fontsize">
+  <li>Stress daheim mit Ehepartner/Kindern oder bei der Arbeit</li>
+  <li>Arbeitsbedingungen nicht gut immer sitzen oder schwer tragen</li>
+  <li>Dauerhaft schlechte Ernährung oder zu wenig Bewegung oder zu viel</li>
+  <li>Falsche Kleidung (falsches Schuhwerk, falscher BH,...), Übergewicht, ungünstige Körperhaltung</li>
+  <li>Angst, Erbkrankheit, Unzufriedenheit</li>
+
+</ul>
+
+
+<!-- radio buttons-->
+<mat-radio-group>
+  <mat-radio-button value="1">Ja</mat-radio-button>
+  <mat-radio-button value="2">Nein</mat-radio-button>
+</mat-radio-group>
+<br />
+<!-- info text-->
+<p class="infofont">Bennen Sie die Faktoren die Ihren Schmerz begünstigen</p>
+<!-- textfield zum eintragen-->
+<mat-form-field class="formfieldmittig" floatLabel="auto" appearance="outline">
+  <mat-label>Beschreibung</mat-label>
+  <input matInput required #message maxlength="128"/>
+  <mat-hint mathint.align="end">{{message.value.length}} / 128</mat-hint>
+</mat-form-field>
+
 
 
 

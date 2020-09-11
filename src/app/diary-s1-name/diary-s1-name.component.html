@@ -7,9 +7,17 @@
 <!--progressbar mit 4 starten, dann immer 8er schritte, um mit allen seiten auf 100 zu kommen-->
 <mat-progress-bar mode="determinate" value="4"></mat-progress-bar>
 
-<p class="titlesize">* Name des Eintrags</p>
+<p class="titlesize">* Name des Eintrags</p> <br />
 
+<!--hier kommt der Name des Eintrags rein-->
 
+<p class="textmitte">Bitte geben Sie den Namen des Eintrags ein:</p>
+
+<mat-form-field class="formfieldmittig" floatLabel="auto" appearance="outline">
+  <mat-label>Name</mat-label>
+  <input matInput required #message maxlength="20"/>
+  <mat-hint mathint.align="end">{{message.value.length}} / 20</mat-hint>
+</mat-form-field>
 
 
 

@@ -11,8 +11,23 @@
 <!-- title der seite-->
   <p class="titlesize">Hatten Sie sonstige Begleitbeschwerden aufgrund des Rückenschmerzes?</p>
 
+<!-- infos und aufzählung-->
 
+<p>Begleitbeschwerden wären:</p>
 
+<ul class="tabellefont">
+  <li>Seelische oder körperliche Probleme</li>
+  <li>oder Symptome wie Bluthochdruck, Kopfschmerzen, Trockenheitsgefühl, Taubheitsgefühl, ...</li>
+  <li>seit Stunden auf dem Sofa gesessen oder vor dem PC</li>
+  <li>eine Runde laufen gewesen</li>
+</ul>
+
+<!--textfeld zum eintragen-->
+<mat-form-field class="formfieldmittig" floatLabel="auto" appearance="outline">
+  <mat-label>Begleitbeschwerden</mat-label>
+  <input matInput required #message maxlength="128"/>
+
+</mat-form-field>
 
 <!--letzte Button und die Navigation-->
 <mat-toolbar class="laneunten">

@@ -71,3 +71,12 @@ mat-toolbar.laneunten{
 }
 /*----------------standard template css ende------------------------------*/
 
+/*radiobutton
+*/
+.mat-radio-button ~ .mat-radio-button {
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.mat-radio-group {
+  margin-left: 25%;
+}

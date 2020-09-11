@@ -10,8 +10,21 @@
 
   <p class="titlesize">* Wann ist der Schmerz erneut aufgetreten?</p>
 
+<!--Datum und Uhrzeit-->
+<p>Bitte geben Sie das Datum ein:</p> <br />
+<div class="datemitte">
+<mat-form-field appearance="fill">
+  <mat-label>Datum Wählen</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
 
+</div>
 
+<br /><p>Bitte geben Sie die Uhrzeit ein:</p> <br />
+
+<ngx-timepicker-field #picker2 [format]="24" class="test"></ngx-timepicker-field>
 
 <!--letzte Button und die Navigation-->
 <mat-toolbar class="laneunten">

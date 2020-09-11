@@ -11,8 +11,20 @@
 <!-- title der seite-->
   <p class="titlesize">Strahlen die Schmerzen woanders aus?</p>
 
-
-
+<!-- radio buttons-->
+  <mat-radio-group>
+    <mat-radio-button value="1">Ja</mat-radio-button>
+    <mat-radio-button value="2">Nein</mat-radio-button>
+  </mat-radio-group>
+  <br />
+  <!-- info text-->
+  <p class="infofont">Wenn der Schmerz ausstrahlt wohin genau strahlt er aus, beschreiben Sie es wenn Sie die Lokalisierung nicht genau kennen</p>
+  <!-- textfield zum eintragen-->
+  <mat-form-field class="formfieldmittig" floatLabel="auto" appearance="outline">
+    <mat-label>Beschreibung</mat-label>
+    <input matInput required #message maxlength="128"/>
+    <mat-hint mathint.align="end">{{message.value.length}} / 128</mat-hint>
+  </mat-form-field>
 
 <!--letzte Button und die Navigation-->
 <mat-toolbar class="laneunten">

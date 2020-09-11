@@ -11,5 +11,12 @@ export class OldDiaryS3StrengthComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // tslint:disable-next-line: member-ordering
+  lastpainvalue = 50;
+   // tslint:disable-next-line: member-ordering
+   slidervalue = 0;
+   // tslint:disable-next-line: typedef
+   updateSetting(event) {
+     this.slidervalue = event.value;
+   }
 }

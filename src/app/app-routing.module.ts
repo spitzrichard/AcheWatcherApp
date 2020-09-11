@@ -25,6 +25,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DiaryS1NameComponent } from './diary-s1-name/diary-s1-name.component';
 
+
+
 // Hier werden die Routen festgelegt um auf die entsprechenden Seiten zu navigieren
 const routes: Routes = [
   { path: 'home', component: HomeComponent},

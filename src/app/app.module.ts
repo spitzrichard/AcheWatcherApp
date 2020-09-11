@@ -1,3 +1,5 @@
+import { MatDatepickerModule} from '@angular/material/datepicker';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -41,6 +43,26 @@ import { OldDiaryS2WhereComponent } from './old-diary-s2-where/old-diary-s2-wher
 import { OldDiaryS3StrengthComponent } from './old-diary-s3-strength/old-diary-s3-strength.component';
 import { OldDiaryS4TreatedComponent } from './old-diary-s4-treated/old-diary-s4-treated.component';
 import { OldDiaryS5OtherComponent } from './old-diary-s5-other/old-diary-s5-other.component';
+
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatRadioModule} from '@angular/material/radio';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatSliderModule} from '@angular/material/slider';
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @NgModule({
@@ -88,7 +110,17 @@ import { OldDiaryS5OtherComponent } from './old-diary-s5-other/old-diary-s5-othe
     MatCheckboxModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     MatDialogModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatInputModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRadioModule,
+    NgxMaterialTimepickerModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatSliderModule
+
 
   ],
   providers: [],

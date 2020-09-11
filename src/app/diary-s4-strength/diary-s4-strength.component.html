@@ -11,6 +11,26 @@
 
   <p class="titlesize">* Wie Stark war der Schmerz und wie lange hat er angedauert?</p>
 
+  <p class="textunterslider">Geben Sie die Schmerzstärke ihres Schmerzes an. Die Stärke geht von 0 - Schmerzfrei bis 10 - Schmerz ist unerträglich.</p>
+
+  <div class="slidermitte">
+  <mat-slider [ngClass]="['mat-slider-' + slidervalue.value ]" #slidervalue
+  thumbLabel
+  tickInterval="1"
+  max="10"
+  (change)="updateSetting($event)" [value]="slidervalue"></mat-slider>
+</div>
+<div class="textunterslider">
+  Schmerzstärke: {{slidervalue.value}}
+</div>
+
+<p class="textunten">Geben Sie die Dauer des Schmerzes ein (Stunden, Minuten):</p>
+<div class="ng-number-picker">
+
+  <ngx-timepicker-field #picker2 [format]="24" class="test"></ngx-timepicker-field>
+
+</div>
+
 
 
 

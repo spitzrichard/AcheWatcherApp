@@ -10,7 +10,44 @@
 
   <p class="titlesize">* Wie Stark war der Schmerz, im Vergleich zum letzten Schmerz und wie lange hat der Schmerz angedauert?</p>
 
+  <!--slider von der lezten stärke wie sie war-->
+  <p class="textunterslider">Letzte Schmerzstärke:</p>
 
+
+
+
+
+<div class="textlaststärker">
+  Schmerzstärke: 5
+</div>
+
+<!--slider mit neuer stärke mus minmax geändert werden und startwert muss der alte werte sein also value da wo jetz t 0 ist muss dann berehcnet werden als beispiel ist-->
+<p class="textunterslider">Schmerzstärke im Vergleich zum letzten Schmerz:</p>
+
+<li class="liste">0 - Startwert, Schmerz ist gleich</li>
+<li class="liste">-5 - es ist kein Schmerz vorhanden</li>
+<li class="liste">5 - der Schmerz ist noch unerträglicher</li>
+
+
+<div class="slidermitte">
+  <mat-slider [ngClass]="['mat-slider2-' + slidervalue.value]" #slidervalue
+  thumbLabel
+  tickInterval="1"
+  min="-5"
+  max="5"
+  (change)="updateSetting($event)" [value]="0"></mat-slider>
+</div>
+<div class="textunterslider">
+  Schmerzstärke: {{slidervalue.value}}
+</div>
+
+<!-- zeitauswählrer nur 12h maxmimal-->
+<p class="textunten">Geben Sie die Dauer des Schmerzes ein (Stunden, Minuten):</p>
+<div class="ng-number-picker">
+
+  <ngx-timepicker-field #picker2 [format]="24" class="test"></ngx-timepicker-field>
+
+</div>
 
 
 <!--letzte Button und die Navigation-->

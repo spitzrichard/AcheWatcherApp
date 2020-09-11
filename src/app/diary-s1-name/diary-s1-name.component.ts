@@ -10,6 +10,7 @@ export class DiaryS1NameComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
