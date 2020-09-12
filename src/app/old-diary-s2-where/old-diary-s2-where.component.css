@@ -71,3 +71,40 @@ mat-toolbar.laneunten{
 }
 /*----------------standard template css ende------------------------------*/
 
+/*-----löschen button posi farbe etc.*/
+.buttonclear {
+  background-color: #0e172c;
+  color: #fffffe;
+}
+
+.buttonclearlane {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 7%;
+  background: #fec7d7;
+  color: #0e172c;
+  position: absolute;
+  bottom: 14%;
+}
+
+/*image zentrierung über mattoolbar*/
+
+.bildmittig {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  height: 50%;
+  background: #fec7d7;
+  color: #0e172c;
+  position: absolute;
+  right:    0;
+  bottom:   22%;
+}
+
+/*text  mittig*/
+
+.mittetext {
+  text-align: center;
+}

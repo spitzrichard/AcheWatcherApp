@@ -8,9 +8,19 @@
 <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
 
 
-  <p class="titlesize">* Ist der Schmerz am gleichen Ort aufgetreten?</p>
+  <p class="titlesize">* Wo ist der Schmerz erneut aufgetreten?</p>
 
+  <p class="mittetext">Bitte nur Körperbereiche Kennzeichnen!!!</p>
+  <!--das bild das angezeigt wird für die lokalisierung mit click event-->
+  <mat-toolbar class="bildmittig">
+    <canvas id="canvas" width="260" height="305" class="canvas" (click)="getPosition($event)"
+  style="cursor:crosshair;background:url('./assets/img/FrontBackColor-260x305.png')"></canvas>
+</mat-toolbar>
 
+  <!--löschen der punkte die markiert wurden-->
+  <mat-toolbar class="buttonclearlane">
+    <button mat-flat-button class="buttonclear" (click)="clearpoints()">Löschen</button>
+  </mat-toolbar>
 
 
 <!--letzte Button und die Navigation-->
