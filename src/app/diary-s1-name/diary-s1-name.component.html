@@ -15,7 +15,7 @@
 
 <mat-form-field class="formfieldmittig" floatLabel="auto" appearance="outline">
   <mat-label>Name</mat-label>
-  <input matInput required #message maxlength="20"/>
+  <input matInput required #message id="diaryname" minlength="3" maxlength="20"/>
   <mat-hint mathint.align="end">{{message.value.length}} / 20</mat-hint>
 </mat-form-field>
 
@@ -23,7 +23,7 @@
 
 <!--letzte Button und die Navigation-->
 <mat-toolbar class="laneunten">
-  <button mat-flat-button class="mat-buttoncustomcolor" routerLink="../diary_s2_time">Weiter</button>
+  <button mat-flat-button class="mat-buttoncustomcolor" (click)="goToComponentB();">Weiter</button>
 </mat-toolbar>
 <a mat-button class="hover-color-abbrechen" routerLink="../home">Abbrechen</a>
 <!--<<<<<<<<<<<<<<<<<<<<<<<< standard html tagebuch einträge ende<<<<<<<<<<<<<<<<<<<<-->

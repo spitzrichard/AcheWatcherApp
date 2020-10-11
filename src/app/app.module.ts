@@ -53,12 +53,27 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatSliderModule} from '@angular/material/slider';
 
 
+//import { DBConfig, NgxIndexedDBModule, NgxIndexedDBService} from 'ngx-indexed-db';
 
 
 
 
+//hier muss die Database festgelegt werden
+/*
+const dbConfig: DBConfig  = {
+  name: 'Awa-Db',
+  version: 1,
+  objectStoresMeta: [{
+    store: 'diary',
+    storeConfig: { keyPath: 'id', autoIncrement: true },
+    storeSchema: [
+      { name: 'diaryname', keypath: 'diaryname', options: { unique: false } },
+    ]
+  }]
+};
 
 
+*/
 
 
 
@@ -111,7 +126,6 @@ import {MatSliderModule} from '@angular/material/slider';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     MatDialogModule,
     MatProgressBarModule,
-    MatInputModule,
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
@@ -120,6 +134,9 @@ import {MatSliderModule} from '@angular/material/slider';
     MatNativeDateModule,
     MatDatepickerModule,
     MatSliderModule
+    /*,
+    NgxIndexedDBService,
+    NgxIndexedDBModule.forRoot(dbConfig)*/
 
 
   ],
